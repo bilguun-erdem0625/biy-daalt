@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bd</title>
+		<style>
+		body{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			height:90vh;
+			background-color:red;
+		}
+		.cc{
+			background-color:#fff;
+			padding:15px;
+			border-radius:10px;
+			height:230px;
+		}
+		.cc input{
+			width:93%;
+			padding:10px;
+			margin-bottom:30px;
+			padding:10px;
+			
+		}
+		.cc p{
+			text-align:center;
+		}
+		.desrease{
+		color:purple;
+		}
+		.increase{
+		color:purple;
+		}
+		</style>
+    </head>
+    <body>
+    <div class="cc">
+        <div class="container">
+    <h2>Currency convertor</h2>
+    <form class="ff">
+        <div class="kk">
+            <input type="number" class="form-control" id="amount"/>
+        </div>
+        <div class="bb">
+            <select class="button" id="currency-1" required>
+				<option>MNT</option>
+                <option>PLN</option>
+                <option>EUR</option>
+                <option>USD</option>
+				<option>CAD</option>
+				<option>JPY</option>
+				<option>CNY</option>
+				<option>RUB</option>
+				<option>KRW</option>
+				<option>INR</option>
+            </select>
+        </div>
+        <div class="ll">
+            <select class="form-control" id="currency-2" required>
+				<option>MNT</option>
+                <option>EUR</option>
+                <option>USD</option>
+                <option>PLN</option>
+				<option>CAD</option>
+				<option>JPY</option>
+				<option>CNY</option>
+				<option>RUB</option>
+				<option>KRW</option>
+				<option>INR</option>
+            </select>
+        </div>  
+       <button class="btn calculate-btn btn-primary mb-2">Convertor Currency</button>
+    </form>
+        <div class="result">
+            <p>
+                <span class="given-amount"></span> 
+                <span class="base-currency"></span>
+                <span class="final-result"></span> 
+                <span class="second-currency"></span>
+            </p>
+        </div>
+        </div> 
+    </div>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+<!-- 
+required: логик шинж чанар. Байгаа үед энэ нь маягтыг илгээхээсээ өмнө оролтын талбарыг бөглөх ёстойг зааж өгдөг.
+span: угаасаа юуг ч төлөөлдөггүй агуулгыг хэллэг болгох ерөнхий доторлогоотой контейнер
+label: HTML хэлбэрийн элементийн тайлбарыг тодорхойлоход ашигладаг.
+option: Drop-Down цэснээс сонголтыг сонгоход ашигладаг.
+-->
